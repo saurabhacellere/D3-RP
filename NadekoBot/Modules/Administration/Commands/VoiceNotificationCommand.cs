@@ -25,6 +25,7 @@ namespace NadekoBot.Modules.Administration.Commands
             if (subscribers.ContainsKey(voiceChannel))
             {
                 await e.Channel.SendMessage("`Voice channel notifications disabled.`").ConfigureAwait(false);
+                 await e.Channel.SendMessage("`Voice channel notifications disabled.`").ConfigureAwait(false);
                 return;
             }
             if (subscribers.TryAdd(voiceChannel, e.Channel))
